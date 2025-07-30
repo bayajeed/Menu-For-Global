@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global eCommerce - Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar" aria-label="Main navigation">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home" aria-label="Home">
+                <img src="assets/logo.png" alt="Your Brand Logo" class="logo-img">
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Off-canvas Menu for Mobile -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home" data-section="home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#shop" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-section="shop">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#category1">Category 1</a></li>
+                                <li><a class="dropdown-item" href="#category2">Category 2</a></li>
+                                <li><a class="dropdown-item" href="#category3">Category 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deals" data-section="deals">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-section="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#support" data-section="support">Support</a>
+                        </li>
+                    </ul>
+                    <!-- Right Side Icons -->
+                    <div class="d-flex align-items-center icon-group">
+                        <!-- Search Icon -->
+                        <a href="#" class="nav-icon me-3" id="searchToggle" aria-label="Toggle search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <!-- Social Media Icon -->
+                        <a href="https://instagram.com/yourbrand" class="nav-icon me-3" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <!-- Cart Icon with Tooltip -->
+                        <a href="#" class="nav-icon position-relative" id="cartIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View your cart (0 items)" aria-label="View cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Search Bar (Hidden by default) -->
+    <div class="search-bar d-none" aria-hidden="true">
+        <div class="container">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Search products..." aria-label="Search">
+                <button class="btn btn-primary search-btn" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content Placeholder -->
+    <main class="container mt-5 pt-5">
+        <section id="home" class="section top-section">Home Section - Welcome to Your eCommerce</section>
+        <section id="shop" class="section">Shop Section - Browse Products</section>
+        <section id="deals" class="section">Deals Section - Get the Latest Offers</section>
+        <section id="about" class="section">About Section - Learn About Us</section>
+        <section id="contact" class="section">Contact Section - Reach Out</section>
+        <section id="support" class="section">Support Section - 24/7 Assistance</section>
+    </main>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
