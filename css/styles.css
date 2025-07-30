@@ -289,6 +289,10 @@
     .dropdown-menu {
         min-width: 200px;
     }
+    .search-bar {
+        padding: 15px 0;
+        top: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
