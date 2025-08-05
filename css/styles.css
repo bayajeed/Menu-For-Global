@@ -7,10 +7,10 @@
 
 /* Navbar Styling */
 .navbar {
-    padding: 15px 0;
-    background: linear-gradient(90deg, #2c3238 0%, #343a40 100%);
-    transition: all 0.3s ease;
-    z-index: 1000;
+    padding: 5px 0;
+    background: linear-gradient(90deg, #1864af 0%, #343a40 100%);
+    transition: all 0.3s ease; /* Smooth transition for background */
+    z-index: 1000; /* Ensure navbar is above other content */
 }
 
 /* Fixed Navbar */
@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(10, 10, 10, 10);
     padding: 10px 0;
 }
 
@@ -200,10 +200,10 @@
     border-bottom: 2px solid #00aaff;
 }
 
-.offcanvas-body .icon-group {
+/* .offcanvas-body .icon-group {
     margin-top: 20px;
     padding: 0 20px;
-}
+} */
 
 /* Main Content Sections */
 .section {
